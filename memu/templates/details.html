@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ memu.item }}
+{% endblock %}
+
+{% block content %}
+<div class="mycard">
+  <h1>{{ memu.item }} <h1>
+  
+  <img src="{{ memu.cover.url }}" width = '300'/>
+  <p>price: {{ memu.price }}</p>
+  <p>Hot or Ice:{{memu.temp}}</p>
+  <p>Size: {{ memu.size }}</p>
+
+  <p>back to <a href="/memu">menu</a></p>
+</div>
+{% endblock %}
